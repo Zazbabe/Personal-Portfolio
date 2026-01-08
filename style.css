@@ -1,0 +1,108 @@
+         body{
+                background-color: #fcc3ee;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                border-width: 2px;
+            }
+
+            h1{
+                background-color: lightgray;
+                border-style: outset;
+                border-radius: 10px;
+                padding: 20px;
+            }
+
+            h2{
+            display: flex;
+            align-self: center;
+            }
+
+      
+            div{
+                color: #484545;
+                border-width: 4px;
+                border-color: gray;
+                border-style: outset;
+                padding: 10px;
+                border-radius: 15px;
+                }
+
+            .header{
+                background-color: blueviolet;
+                color: beige;
+            }
+
+            .header a{
+                text-decoration: none;
+                 color: beige;
+            }
+
+            .presentation{
+                background-color: beige;
+            }
+
+            .project{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* 2 kolumner */
+                gap: 10px;
+            }
+
+            .projectcard{
+                height: 100px;
+                background: bisque;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card-link {
+                text-decoration: none;
+                color: inherit;
+                display: block; /* Viktigt för att hela ytan ska bli klickbar */
+            }
+
+            .card {
+                text-decoration: none;
+                cursor: pointer;
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+
+            .card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            }
+
+            .photo-container{
+                height: 50px;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 10px;
+            }
+
+            @media (max-width: 600px) {
+                .project {
+                flex: 0 0 100%;
+            }
+
+            h3{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                 
+            }
+
+            #B{
+            display: flex;
+            align-self: center;
+            }
+
+            #HeadOfDiv{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
